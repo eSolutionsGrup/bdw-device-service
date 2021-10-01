@@ -3,8 +3,8 @@ package ro.esolutions.bdw.user
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
-import ro.esolutions.bdw.config.security.Command
-import ro.esolutions.bdw.config.security.DeviceCommandGateway
+import ro.esolutions.bdw.config.command.Command
+import ro.esolutions.bdw.config.command.DeviceCommandGateway
 
 @RestController
 @RequestMapping("/message")

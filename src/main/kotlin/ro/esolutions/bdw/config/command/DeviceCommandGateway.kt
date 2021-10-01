@@ -1,4 +1,4 @@
-package ro.esolutions.bdw.config.security
+package ro.esolutions.bdw.config.command
 
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.TimeoutCancellationException

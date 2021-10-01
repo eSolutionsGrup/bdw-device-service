@@ -3,8 +3,8 @@ package ro.esolutions.bdw.config.kafka
 import org.springframework.cloud.stream.annotation.StreamListener
 import org.springframework.messaging.handler.annotation.Payload
 import org.springframework.stereotype.Component
-import ro.esolutions.bdw.config.security.CommandResponse
-import ro.esolutions.bdw.config.security.DeviceCommandGateway
+import ro.esolutions.bdw.config.command.CommandResponse
+import ro.esolutions.bdw.config.command.DeviceCommandGateway
 
 @Component
 class CommandResponseHandler(private val deviceCommandGateway: DeviceCommandGateway) {

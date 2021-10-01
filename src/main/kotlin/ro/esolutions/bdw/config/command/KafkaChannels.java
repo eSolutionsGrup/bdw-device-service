@@ -1,4 +1,4 @@
-package ro.esolutions.bdw.config.security;
+package ro.esolutions.bdw.config.command;
 
 import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.cloud.stream.annotation.Output;

@@ -1,0 +1,12 @@
+logging:
+  level:
+    org.springframework.security: info
+spring:
+  application:
+    name: device-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bdw
+    username: postgres
+    password: postgres
+server:
+  port: 8500

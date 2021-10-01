@@ -1,4 +1,4 @@
-package ro.esolutions.bdw.config.security
+package ro.esolutions.bdw.config.command
 
 import java.util.*
 

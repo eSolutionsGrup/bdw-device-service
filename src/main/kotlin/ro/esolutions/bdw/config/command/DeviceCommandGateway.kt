@@ -16,12 +16,12 @@ class DeviceCommandGateway(
 
     fun sendAndWaitResponse(command: Command): CommandResponse = runBlocking {
         kafkaGateway.sendCommand(command)
-
+        println("sent uid: ${command.uid}")
         val deferred = CompletableDeferred<CommandResponse>()
         commands[command.uid] = deferred
         try {
             withTimeout(25000) {
-                deferred.await().also { println("received response: $it") }
+                deferred.await().also { println("received response: ${it.uid}") }
             }
         } catch (e: TimeoutCancellationException) {
             deferred.cancel(e)

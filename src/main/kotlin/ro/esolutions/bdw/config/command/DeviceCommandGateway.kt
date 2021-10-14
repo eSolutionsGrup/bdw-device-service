@@ -24,10 +24,10 @@ class DeviceCommandGateway(
                 deferred.await().also { println("received response: ${it.uid}") }
             }
         } catch (e: TimeoutCancellationException) {
-            deferred.cancel(e)
+            deferred.complete(CommandResponse("device-not-found"))
             commands.remove(command.uid)
             println("command $command timed out")
-            throw IllegalStateException("device not found")
+            CommandResponse("device-not-found")
         }
     }
 

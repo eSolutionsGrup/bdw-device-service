@@ -1,4 +1,4 @@
-package ro.esolutions.bdw.config.kafka
+package ro.esolutions.bdw.config.command
 
 import org.springframework.cloud.stream.annotation.StreamListener
 import org.springframework.messaging.handler.annotation.Payload

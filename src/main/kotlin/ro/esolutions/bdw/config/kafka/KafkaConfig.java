@@ -1,4 +1,4 @@
-package ro.esolutions.bdw.config.command;
+package ro.esolutions.bdw.config.kafka;
 
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.context.annotation.Configuration;
